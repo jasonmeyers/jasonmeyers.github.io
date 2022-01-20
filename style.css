@@ -1,6 +1,69 @@
-body {
-  color: #333;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto+Mono&display=swap");
+
+:root,
+html {
+  font-size: 8px;
 }
+body {
+  background-color: #003957;
+  color: rgb(206, 206, 206);
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+}
+
 a {
   color: #999;
+}
+
+h1 {
+  font-family: "Roboto Mono";
+  margin: 1rem 1rem 0;
+  font-size: 3.5rem;
+}
+
+p {
+  font-family: "Roboto Mono";
+  color: #4fafe3;
+  line-height: 1.2;
+}
+.base {
+  color: #003957;
+}
+.poink {
+  color: #de66e3;
+}
+.bloiue {
+  color: #4fafe3;
+}
+.orange {
+  color: #e39939;
+}
+.kren {
+  color: #83e344;
+}
+.image {
+  clip-path: ellipse(243px 268px at 82% 73%);
+  align-self: center;
+  transform: translate(-14px, -8px);
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 500px;
+  text-align: center;
+}
+.outlink {
+  color: #de66e3;
+  text-decoration: underline;
+  font-weight: 900;
+  text-decoration-color: #de66e3;
+  text-decoration-thickness: 0.125em;
+  text-underline-offset: 1.5px;
 }
