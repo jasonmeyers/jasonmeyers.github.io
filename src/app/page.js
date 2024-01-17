@@ -17,7 +17,7 @@ export default function Home() {
             rel="noopener noreferrer"
           >
             Linkedin
-          </a>
+          </a>{" "}
           <a
             href="https://github.com/jasonmeyers"
             target="_blank"
