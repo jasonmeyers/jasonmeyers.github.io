@@ -5,12 +5,14 @@ import styles from "../app/page.module.css";
 
 function Introduction() {
   return (
-    <div className="description">
-      <Image src={jasonImage} alt="Jason Meyers" width={400} />
-      <h1 className={styles.h1}>I am Jason Meyers</h1>I work as a{" "}
-      <strong>Web Developer</strong> and <strong>UI Engineer</strong>.
+    <div className={styles.description}>
+      <Image src={jasonImage} alt="Jason Meyers" width={600} />
+      <h1 className={styles.h1}>I am Jason Meyers</h1>
       <p>
-        I build UI + help organizations explore, define, and create products
+        I work as a <strong>Design </strong> + <strong>UI Engineer</strong>. I
+        build cloud-native SaaS products, design systems, and high-touch
+        information interfaces - from Finance to Education, Insurance to
+        Publishing.
       </p>
       <p>
         <a
@@ -18,14 +20,14 @@ function Introduction() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Linkedin
+          Linkedin ⇢
         </a>{" "}
         <a
           href="https://github.com/jasonmeyers"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Github
+          Github ⇢
         </a>
       </p>
     </div>
