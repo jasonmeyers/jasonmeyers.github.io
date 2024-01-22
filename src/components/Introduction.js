@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import jasonImage from "../../public/jason-meyers.png";
 import styles from "../app/page.module.css";
+import Link from "next/link";
 
 function Introduction() {
   return (
@@ -29,6 +30,7 @@ function Introduction() {
         >
           Github ⇢
         </a>
+        <Link href="/work">Work ⇢</Link>
       </p>
     </div>
   );
