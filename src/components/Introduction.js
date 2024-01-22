@@ -30,7 +30,7 @@ function Introduction() {
         >
           Github ⇢
         </a>
-        <Link href="/work">Work ⇢</Link>
+        {/* <Link href="/work">Work ⇢</Link> */}
       </p>
     </div>
   );
