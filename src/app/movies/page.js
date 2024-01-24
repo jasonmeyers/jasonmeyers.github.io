@@ -1,10 +1,10 @@
 import React from "react";
-import movies from "../../../data/movies";
+import moviesdata from "../../../data/moviesdata";
 
-const page = () => {
+const movies = () => {
   return (
     <div>
-      {movies.map(({ id, title, overview } = movie) => (
+      {moviesdata.map(({ id, title, overview } = movie) => (
         <section key={id}>
           <h1>
             {id}.{title}
@@ -16,4 +16,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default movies;

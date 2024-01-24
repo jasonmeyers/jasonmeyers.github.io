@@ -17,47 +17,61 @@ const data = [
     name: "Page A",
     uv: 4000,
     pv: 2400,
+    lv: 4000,
+    mv: 2400,
     amt: 2400,
   },
   {
     name: "Page B",
     uv: -3000,
     pv: 1398,
+    lv: 4000,
+    mv: 2400,
     amt: 2210,
   },
   {
     name: "Page C",
     uv: -2000,
     pv: -9800,
+    lv: 4000,
+    mv: 2400,
     amt: 2290,
   },
   {
     name: "Page D",
     uv: 2780,
     pv: 3908,
+    lv: 4000,
+    mv: 2400,
     amt: 2000,
   },
   {
     name: "Page E",
     uv: -1890,
     pv: 4800,
+    lv: 4000,
+    mv: 2400,
     amt: 2181,
   },
   {
     name: "Page F",
     uv: 2390,
     pv: -3800,
+    lv: 4000,
+    mv: 2400,
     amt: 2500,
   },
   {
     name: "Page G",
     uv: 3490,
     pv: 4300,
+    lv: 4000,
+    mv: 2400,
     amt: 2100,
   },
 ];
 
-export default function page() {
+export default function charts() {
   const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
@@ -68,8 +82,8 @@ export default function page() {
     <>
       {isClient && (
         <BarChart
-          width={500}
-          height={300}
+          width={1000}
+          height={600}
           data={data}
           margin={{
             top: 5,
@@ -86,6 +100,8 @@ export default function page() {
           <ReferenceLine y={0} stroke="#000" />
           <Bar dataKey="pv" fill="#8884d8" />
           <Bar dataKey="uv" fill="#82ca9d" />
+          <Bar dataKey="mv" fill="#8884d8" />
+          <Bar dataKey="lv" fill="#82ca9d" />
         </BarChart>
       )}
     </>
