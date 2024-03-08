@@ -4,7 +4,8 @@ import styles from "../work.module.css";
 const experience = [
   {
     company: "Religion Studio",
-    description: "Marketing site for boutique NYC design firm",
+    description:
+      "I was approached by Religion to complete their marketing site, which highlights their cutting-edge approach to design. ",
     role: "Web Developer",
     year: "2023",
     url: "https://www.religion.studio/",

@@ -1,8 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import jasonImage from "../../public/jason-meyers.png";
+import jasonImage from "../../public/jason-meyers-small.jpg";
 import styles from "../app/page.module.css";
-import Link from "next/link";
 
 function Introduction() {
   return (
