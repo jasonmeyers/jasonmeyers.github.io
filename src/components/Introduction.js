@@ -2,12 +2,13 @@ import React from "react";
 import Image from "next/image";
 import jasonImage from "../../public/jason-meyers-small.jpg";
 import styles from "../app/page.module.css";
+import { fullName } from "@/app/utilities";
 
 function Introduction() {
   return (
     <div className={styles.description}>
       <Image src={jasonImage} alt="Jason Meyers" width={600} priority />
-      <h1 className={styles.h1}>I am Jason Meyers</h1>
+      <h1 className={styles.h1}>I am {fullName}</h1>
       <p>
         I work as a <strong>Design </strong> + <strong>UI Engineer</strong>{" "}
         &mdash; I build cloud-native SaaS products, design systems, and
