@@ -1,15 +1,27 @@
-import React from "react";
-import styles from "../work.module.css";
+import Image from "next/image";
+import styles from "../../styles/work.module.css";
+import religionImage from "../../../public/work/religion-studio-1.png";
+import religionContact from "../../../public/work/religion-contact.png";
 
 const experience = [
   {
     company: "Religion Studio",
     description:
-      "I was approached by Religion to complete their marketing site, which highlights their cutting-edge approach to design. ",
+      "I was approached by Religion to create a boutique interactive experience, which highlights their cutting-edge approach to design. ",
     role: "Web Developer",
     year: "2023",
     url: "https://www.religion.studio/",
     keywords: ["marketing", "UX", "React JS", "product management"],
+    work: [
+      {
+        name: "first",
+        image: religionImage,
+      },
+      {
+        name: "second",
+        image: religionContact,
+      },
+    ],
   },
   {
     company: "SS&C/Advent",
@@ -57,18 +69,30 @@ const experience = [
   },
 ];
 
-const work = (props) => {
+const Work = ({ name, image }) => {
   return (
     <>
+      <Image src={image} width={200} height={200} alt={name} />
+    </>
+  );
+};
+
+const work = (props) => {
+  return (
+    <div className={styles.main}>
       {experience.map(({ company, work, product, description } = item) => (
         <section key={company} className={styles.work}>
           <h1 className={styles.header1}>{company}</h1>
           <blockquote className={styles.blockquote}>
             {product} {description}
           </blockquote>
+          {/* {work &&
+            work.map((item) => (
+              <Work key={item.name} name={item.name} image={item.image}></Work>
+            ))} */}
         </section>
       ))}
-    </>
+    </div>
   );
 };
 
