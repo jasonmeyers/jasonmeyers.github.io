@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import jasonImage from "../../public/jason-meyers-small.jpg";
+import jasonImage from "../../public/jason-meyers-smallest.png";
 import styles from "../styles/intro.module.css";
 import { fullName } from "@/app/utilities";
 
