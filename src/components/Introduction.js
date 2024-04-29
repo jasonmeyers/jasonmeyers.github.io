@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import jasonImage from "../../public/jason-meyers-smallest.png";
 import styles from "../styles/intro.module.css";
-import { fullName } from "@/app/utilities";
+import { fullName } from "@/data/content";
 
 function Introduction() {
   return (
@@ -33,7 +33,7 @@ function Introduction() {
           >
             Github ⇢
           </a>
-          {/* <a href="/work">Work ⇢</a> */}
+          <a href="/work">Work ⇢</a>
         </p>
       </div>
     </main>
