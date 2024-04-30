@@ -5,10 +5,12 @@
   justify-content: center;
   min-height: 100vh;
   opacity: 1;
-  /* animation: fadeIn 5s;
+  animation: fadeIn 5s;
   -webkit-animation: fadeIn 5s;
   animation-fill-mode: both;
-  -webkit-animation-fill-mode: both; */
+  -webkit-animation-fill-mode: both;
+  @media (max-width: 700px) {
+  }
 }
 
 @keyframes fadeIn {
@@ -26,7 +28,7 @@
   flex-direction: column;
   align-items: flex-start;
   font-size: 0.85rem;
-  max-width: var(--small-width);
+  /* max-width: var(--small-width); */
 }
 
 .description {
@@ -48,6 +50,9 @@
 .h1 {
   font-size: 3rem;
   margin: 20px 0px 10px 0;
+  @media (max-width: 700px) {
+    font-size: 2rem;
+  }
 }
 
 .description p {
