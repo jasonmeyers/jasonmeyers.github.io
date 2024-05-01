@@ -7,6 +7,7 @@ import appleLogo from "../../public/work/apple-logo.png";
 import anzenLogo from "../../public/work/anzen-logo.png";
 import stateFarmLogo from "../../public/work/state-farm-logo.png";
 import hiRoadLogo from "../../public/work/hiroad-logo.svg";
+import ellucianLogo from "../../public/work/ellucian-logo.svg";
 import businessWireLogo from "../../public/work/business-wire-logo.png";
 
 export const fullName = "Jason Meyers";
@@ -37,7 +38,7 @@ export const experience = [
     products: ["Studio Website"],
     description:
       "I was approached by Religion to create a boutique interactive experience, which highlights their cutting-edge approach to design. ",
-    year: "2023",
+    year: "2022-2023",
     url: "https://www.religion.studio/",
     keywords: ["marketing", "UX", "React JS", "product management"],
     work: [
@@ -54,12 +55,12 @@ export const experience = [
   {
     company: "Anzen Professional Insurance",
     logo: anzenLogo,
+    year: "2021-2022",
     products: [],
     role: "Web Developer + Producer",
     description: [
       "Developed a design system, dashboard, onboarding checklist, customer acquisition flows, and marketing site in NextJS/React/Redux/Emotion, both as a developer and as a producer.",
     ],
-    year: "2022",
     url: "https://www.anzen.com/",
     keywords: ["marketing", "e-commerce", "design system"],
   },
@@ -91,6 +92,15 @@ export const experience = [
     keywords: ["marketing", "e-commerce"],
   },
   {
+    company: "Ellucian",
+    logo: ellucianLogo,
+    products: ["Brainstorm LMS"],
+    description: "Built product features with PM, CSS",
+    year: "2015",
+    url: "https://www.ellucian.com/",
+    keywords: ["education", "LMS"],
+  },
+  {
     company: "Business Wire",
     logo: businessWireLogo,
     products: [
@@ -100,7 +110,7 @@ export const experience = [
     ],
     description:
       "Built and optimized templates/views used by 2.4M documents @ 3.1M views/month. Built and optimized responsive templates on top of Business Wire’s J2EE order-entry stack. Led product feature ideation and prototyping for order-entry flows. Set site and institutional standards for markup, design and CSS.",
-    year: "2016-2020",
+    year: "2013-2015",
     url: "https://www.businesswire.com/",
     keywords: ["marketing", "publishing"],
   },

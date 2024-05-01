@@ -41,14 +41,14 @@ const work = (props) => {
               </>
             )}
             <blockquote className={styles.blockquote}>{description}</blockquote>
-            {/* {work &&
+            {work &&
               work.map((item) => (
                 <Work
                   key={item.name}
                   name={item.name}
                   image={item.image}
                 ></Work>
-              ))} */}
+              ))}
             <div className={styles.meta}>
               {year}
               <em>{role}</em>
