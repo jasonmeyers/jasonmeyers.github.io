@@ -1,10 +1,9 @@
 .main {
-  opacity: 0.5;
-  animation: fadeIn 2s;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
-  flex-wrap: wrap;
+  opacity: 0.9;
+  animation: fadeIn 2s;
   -webkit-animation: fadeIn 2s;
   animation-fill-mode: both;
   -webkit-animation-fill-mode: both;
@@ -13,54 +12,69 @@
   .work {
     background: #404040;
     color: #d8d8d8;
-    padding: var(--small-breakpoint-padding);
+    /* padding: var(--small-breakpoint-padding); */
     margin: calc(var(--small-breakpoint-padding) / 2);
     border-radius: 12px;
+
     display: flex;
     justify-content: flex-start;
-    flex-direction: column;
-    flex: 1;
-    position: relative;
+    flex-direction: row;
     flex: 1;
 
-    .meta {
-      color: #f4f4f4;
-      font-size: 24px;
-      font-weight: 700;
-      /* position: absolute;
-      bottom: 0px; */
-    }
-    .products {
-      .product {
-        display: inline-block;
-        border: 1px solid #ccc;
-        margin: 2px;
-        padding: 1px;
-        border-radius: 4px;
-      }
-    }
+    position: relative;
+    height: auto;
+
     .image {
-      height: 170px;
+      height: auto;
       display: flex;
+      flex: 1;
       flex-direction: row;
       justify-content: center;
       align-items: center;
       background-color: white;
       border-radius: 6px;
-      /*max-height: 200px;
-      align-self: center; */
+      min-width: 400px;
 
       .file {
         margin: 1rem;
       }
     }
-    .header1 {
-      font-size: 30px;
-    }
-    .blockquote {
-      height: auto;
-    }
 
+    .content {
+      display: flex;
+      flex: 2;
+      flex-direction: column;
+
+      .meta {
+        color: #f4f4f4;
+        font-size: 24px;
+        font-weight: 700;
+        /* position: absolute;
+      bottom: 0px; */
+      }
+      .products {
+        .product {
+          display: inline-block;
+          border: 1px solid #ccc;
+          margin: 2px;
+          padding: 1px;
+          border-radius: 4px;
+        }
+      }
+      .workcontainer {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+
+      .header1 {
+        font-size: 30px;
+      }
+      .blockquote {
+        height: auto;
+      }
+    }
     @media (max-width: 700px) {
       width: 100%;
       /* .header1 {
