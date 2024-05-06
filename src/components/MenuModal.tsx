@@ -25,7 +25,7 @@ function MenuModal({ openModal, closeModal, children, imgsrc }) {
         alt={name}
       />
       <button onClick={closeModal} className="close">
-        X
+        ×
       </button>
     </dialog>
   );

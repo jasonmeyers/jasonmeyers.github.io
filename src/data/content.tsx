@@ -1,20 +1,25 @@
-import religionLogo from '../../public/work/religion-logo.svg';
-import religionMark from '../../public/work/religion-studio-logo.svg';
+import religionLogo from '../../public/work/marks/religion-logo.svg';
+import religionMark from '../../public/work/marks/religion-studio-logo.svg';
 import religionImage from '../../public/work/religion-studio-1.png';
 import religionContact from '../../public/work/religion-contact.png';
 
-import ssncLogo from '../../public/work/ssnc-logo.png';
-import appleLogo from '../../public/work/apple-logo.png';
-import anzenLogo from '../../public/work/anzen-logo.png';
-import stateFarmLogo from '../../public/work/state-farm-logo.png';
-import hiRoadLogo from '../../public/work/hiroad-logo.svg';
-import ellucianLogo from '../../public/work/ellucian-logo.svg';
-import businessWireLogo from '../../public/work/business-wire-logo.png';
+import anzenLogo from '../../public/work/marks/anzen-logo.png';
+import anzenDashboard from '../../public/work/screenshots/anzen-dashboard.png';
+import anzenMarketing from '../../public/work/screenshots/anzen-marketing-screen.png';
+import anzenMarketingTwo from '../../public/work/screenshots/anzen-marketing.png';
+
+import ssncLogo from '../../public/work/marks/ssnc-logo.png';
+import appleLogo from '../../public/work/marks/apple-logo.png';
+
+import stateFarmLogo from '../../public/work/marks/state-farm-logo.png';
+import hiRoadLogo from '../../public/work/marks/hiroad-logo.svg';
+import ellucianLogo from '../../public/work/marks/ellucian-logo.svg';
+import businessWireLogo from '../../public/work/marks/business-wire-logo.png';
 
 import adventOne from '../../public/work/screenshots/advent-small.png';
-// import adventTwo from '../../public/work/screenshots/advent-medium.png';
-// import adventThree from '../../public/work/screenshots/advent-large.png';
-// import adventFour from '../../public/work/screenshots/advent-xlarge.png';
+import adventTwo from '../../public/work/screenshots/advent-medium.png';
+import adventThree from '../../public/work/screenshots/advent-large.png';
+import adventFour from '../../public/work/screenshots/advent-xlarge.png';
 
 export const fullName = 'Jason Meyers';
 
@@ -37,10 +42,10 @@ export const experience = [
       'web components'
     ],
     work: [
-      { name: 'first', image: adventOne }
-      // { name: 'second', image: adventTwo }
-      // { name: 'third', image: adventThree },
-      // { name: 'third', image: adventFour }
+      { name: 'first', image: adventOne },
+      { name: 'second', image: adventTwo },
+      { name: 'third', image: adventThree },
+      { name: 'third', image: adventFour }
     ]
   },
   {
@@ -57,11 +62,11 @@ export const experience = [
       {
         name: 'first',
         image: religionImage
+      },
+      {
+        name: 'second',
+        image: religionContact
       }
-      // {
-      //   name: "second",
-      //   image: religionContact,
-      // },
     ]
   },
   {
@@ -74,7 +79,21 @@ export const experience = [
       'Developed a design system, dashboard, onboarding checklist, customer acquisition flows, and marketing site in NextJS/React/Redux/Emotion, both as a developer and as a producer.'
     ],
     url: 'https://www.anzen.com/',
-    keywords: ['marketing', 'e-commerce', 'design system']
+    keywords: ['marketing', 'e-commerce', 'design system'],
+    work: [
+      {
+        name: 'first',
+        image: anzenDashboard
+      },
+      {
+        name: 'second',
+        image: anzenMarketing
+      },
+      {
+        name: 'third',
+        image: anzenMarketingTwo
+      }
+    ]
   },
   {
     company: 'Apple + Rosewood Creative',

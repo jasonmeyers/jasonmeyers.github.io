@@ -28,8 +28,8 @@
   -webkit-animation-fill-mode: both;
   overflow: hidden;
   margin: 0 auto;
+  transition: 2s fadeOut;
 }
-
 .close {
   display: block;
   position: absolute;
@@ -37,6 +37,9 @@
   top: 0;
   z-index: 100;
   font-size: 36px;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
 }
 @keyframes fadeIn {
   0% {
