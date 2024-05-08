@@ -22,13 +22,23 @@ export const ProductsList = ({ products }) => {
 const Work = (props) => {
   return (
     <>
-      {/* <Navigation /> */}
       <div className={styles.main}>
         {experience.map(
           ({ company, logo, work, year, products, description, role }) => (
             <section key={company} className={styles.work}>
               <div className={styles.image}>
                 <Image src={logo} alt={company} className={styles.file} />
+                {work && (
+                  <div className={styles.workcontainer}>
+                    {work.map((item) => (
+                      <WorkExample
+                        key={item.name}
+                        name={item.name}
+                        workImage={item.image}
+                      ></WorkExample>
+                    ))}
+                  </div>
+                )}
               </div>
               <div className={styles.content}>
                 <h1 className={styles.header1}>{company}</h1>
@@ -44,16 +54,6 @@ const Work = (props) => {
                 <blockquote className={styles.blockquote}>
                   {description}
                 </blockquote>
-                <div className={styles.workcontainer}>
-                  {work &&
-                    work.map((item) => (
-                      <WorkExample
-                        key={item.name}
-                        name={item.name}
-                        workImage={item.image}
-                      ></WorkExample>
-                    ))}
-                </div>
               </div>
             </section>
           )

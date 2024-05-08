@@ -1,13 +1,12 @@
 .examplecontainer {
   border: none;
-
-  width: 300px;
-  height: 200px;
-  border: 1px solid hotpink;
+  width: 150px;
+  height: 100px;
+  overflow: hidden;
+  border: 1px solid black;
+  margin: 5px;
   overflow: hidden;
   .workimage {
-    border: 1px solid hotpink;
-    width: 300px;
     height: auto;
   }
 }

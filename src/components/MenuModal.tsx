@@ -22,7 +22,7 @@ function MenuModal({ openModal, closeModal, children, imgsrc }) {
         fill
         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         style={{ objectFit: 'contain' }}
-        alt={name}
+        alt="image"
       />
       <button onClick={closeModal} className="close">
         ×

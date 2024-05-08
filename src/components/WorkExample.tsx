@@ -12,12 +12,7 @@ function openDialog(img) {
 const WorkExample = ({ name, workImage }) => {
   const [modal, setModal] = useState(false);
   return (
-    <div
-      className="examplecontainer"
-      // style={{
-      //   background: `url(${workImage}) 100% 100%`
-      // }}
-    >
+    <div className="examplecontainer">
       <a href="#" onClick={() => setModal(true)}>
         <Image
           className="workimage"
