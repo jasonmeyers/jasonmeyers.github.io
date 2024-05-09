@@ -143,6 +143,7 @@ export const experience = [
   {
     company: 'HiRoad + State Farm',
     logo: hiRoadLogo,
+    role: 'Design Engineer',
     products: [
       'HiRoad insurance platform',
       'HiRoad Brand Portal',

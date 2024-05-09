@@ -33,8 +33,8 @@ const Work = (props) => {
                   </>
                 )}
                 <div className={styles.meta}>
-                  {year}
-                  <em>{role}</em>
+                  {role && <div className={styles.role}>{role}</div>}
+                  {year && <div className={styles.year}>{year}</div>}
                 </div>
                 <blockquote className={styles.blockquote}>
                   {description}

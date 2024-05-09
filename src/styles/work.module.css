@@ -1,7 +1,6 @@
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   animation: fadeIn 2s;
   -webkit-animation: fadeIn 2s;
   animation-fill-mode: both;
@@ -11,14 +10,13 @@
 
   .work {
     display: flex;
-    justify-content: ;
     flex-direction: column;
     flex: 1;
     position: relative;
-    margin: 4rem 0;
+    margin: 1rem 0 1rem 0;
     padding: 0 5rem 5rem 5rem;
     background-color: #fff;
-    border-radius: 5px;
+    border-radius: 0px 70px 5px 5px;
     box-sizing: border-box;
 
     .image {
@@ -26,7 +24,6 @@
       flex: 1;
       flex-direction: column;
       justify-content: flex-start;
-      align-items: center;
       border-radius: 6px;
       .file {
         display: flex;
@@ -37,6 +34,7 @@
         margin: 0 2rem 2rem 0;
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
       }
     }
 
@@ -48,6 +46,35 @@
       .meta {
         font-size: 24px;
         font-weight: 700;
+        .role {
+          position: absolute;
+          top: 150px;
+          right: 10px;
+          background-color: #121212;
+          color: #fff;
+          width: 130px;
+          height: 130px;
+          border-radius: 3% 50% 50% 50%;
+          display: flex;
+          flex-direction: row;
+          font-size: 14px;
+          padding: 25px 16px 10px 10px;
+        }
+        .year {
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          background-color: #121212;
+          color: #fff;
+          width: 130px;
+          height: 130px;
+          border-radius: 50% 50% 50% 3%;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          align-items: center;
+          font-size: 18px;
+        }
       }
       .products {
         .product {
@@ -68,6 +95,7 @@
     }
     @media (max-width: 700px) {
       width: 100%;
+      padding: 0 2rem 2rem 2rem;
     }
   }
 }
