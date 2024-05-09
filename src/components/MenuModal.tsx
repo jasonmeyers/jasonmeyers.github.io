@@ -1,17 +1,16 @@
-// Modal as a separate component
-// 'use client';
+'use client';
 import { useEffect, useRef } from 'react';
 import Image from 'next/image';
 import '../styles/MenuModal.css';
 
 function MenuModal({ openModal, closeModal, imgsrc, description }) {
-  const ref = useRef();
+  const ref = useRef<HTMLDialogElement>();
 
   useEffect(() => {
     if (openModal) {
-      ref.current.showModal();
+      ref.current?.showModal();
     } else {
-      ref.current.close();
+      ref.current?.close();
     }
   }, [openModal]);
 

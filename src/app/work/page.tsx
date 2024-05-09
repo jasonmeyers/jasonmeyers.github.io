@@ -1,23 +1,8 @@
 import Image from 'next/image';
 import styles from '../../styles/work.module.css';
 import { experience } from '../../data/content';
-import Navigation from '../../components/Navigation';
 import WorkExample from '../../components/WorkExample';
-
-export const ProductsList = ({ products }) => {
-  return (
-    <div className={styles.products}>
-      <strong>Products: </strong>
-      {products.map((product) => {
-        return (
-          <div className={styles.product} key={product}>
-            {product}
-          </div>
-        );
-      })}
-    </div>
-  );
-};
+import { ProductsList } from '../../components/ProductsList';
 
 const Work = (props) => {
   return (
