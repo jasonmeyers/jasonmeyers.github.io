@@ -9,8 +9,9 @@ function openDialog(img) {
   return <Dialog imageFile={img}></Dialog>;
 }
 
-const WorkExample = ({ name, workImage }) => {
+const WorkExample = ({ imagedescription, workImage }) => {
   const [modal, setModal] = useState(false);
+
   return (
     <div className="examplecontainer">
       <a href="#" onClick={() => setModal(true)}>
@@ -19,12 +20,13 @@ const WorkExample = ({ name, workImage }) => {
           width={500}
           height={500}
           src={workImage}
-          alt={name}
+          alt={workImage}
         />
       </a>
       <MenuModal
         openModal={modal}
         imgsrc={workImage}
+        description={imagedescription}
         closeModal={() => setModal(false)}
       ></MenuModal>
     </div>

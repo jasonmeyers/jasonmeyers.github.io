@@ -1,8 +1,8 @@
-import React from "react";
-import Image from "next/image";
-import jasonImage from "../../public/jason-meyers-smallest.png";
-import styles from "../styles/intro.module.css";
-import { fullName } from "../data/content";
+import React from 'react';
+import Image from 'next/image';
+import jasonImage from '../../public/jason-meyers-smallest.png';
+import styles from '../styles/intro.module.css';
+import { fullName } from '../data/content';
 
 function Introduction() {
   return (
@@ -13,7 +13,7 @@ function Introduction() {
       <div className={styles.description}>
         <h1 className={styles.h1}>Hello! I am {fullName}</h1>
         <p>
-          I work as a <strong>Design </strong> + <strong>UI Engineer</strong>{" "}
+          I work as a <strong>Design </strong> + <strong>UI Engineer</strong>{' '}
           &mdash; I build cloud-native SaaS products, design systems, and
           high-touch information interfaces &mdash; from finance to insurance,
           education to publishing.
@@ -25,7 +25,7 @@ function Introduction() {
             rel="noopener noreferrer"
           >
             Linkedin ⇢
-          </a>{" "}
+          </a>{' '}
           <a
             href="https://github.com/jasonmeyers"
             target="_blank"
@@ -33,7 +33,6 @@ function Introduction() {
           >
             Github ⇢
           </a>
-          <a href="/work">Work ⇢</a>
         </p>
       </div>
     </main>

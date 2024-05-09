@@ -1,17 +1,17 @@
 // Modal as a separate component
-'use client';
+// 'use client';
 import { useEffect, useRef } from 'react';
 import Image from 'next/image';
 import '../styles/MenuModal.css';
 
-function MenuModal({ openModal, closeModal, children, imgsrc }) {
+function MenuModal({ openModal, closeModal, imgsrc, description }) {
   const ref = useRef();
 
   useEffect(() => {
     if (openModal) {
-      ref.current?.showModal();
+      ref.current.showModal();
     } else {
-      ref.current?.close();
+      ref.current.close();
     }
   }, [openModal]);
 
@@ -22,8 +22,9 @@ function MenuModal({ openModal, closeModal, children, imgsrc }) {
         fill
         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         style={{ objectFit: 'contain' }}
-        alt="image"
+        alt={description}
       />
+      <div className="description">{description}</div>
       <button onClick={closeModal} className="close">
         ×
       </button>

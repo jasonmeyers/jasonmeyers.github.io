@@ -32,8 +32,8 @@ const Work = (props) => {
                   <div className={styles.workcontainer}>
                     {work.map((item) => (
                       <WorkExample
-                        key={item.name}
-                        name={item.name}
+                        key={item.imagedescription}
+                        imagedescription={item.imagedescription}
                         workImage={item.image}
                       ></WorkExample>
                     ))}

@@ -13,6 +13,11 @@ import appleLogo from '../../public/work/marks/apple-logo.png';
 
 import stateFarmLogo from '../../public/work/marks/state-farm-logo.png';
 import hiRoadLogo from '../../public/work/marks/hiroad-logo.svg';
+
+import hiRoadOne from '../../public/work/screenshots/hiroad-brand-essence.png';
+import hiRoadTwo from '../../public/work/screenshots/hiroad-brand-identity.png';
+import hiRoadThree from '../../public/work/screenshots/hiroad-brand-language.png';
+
 import ellucianLogo from '../../public/work/marks/ellucian-logo.svg';
 import businessWireLogo from '../../public/work/marks/business-wire-logo.png';
 
@@ -20,6 +25,9 @@ import adventOne from '../../public/work/screenshots/advent-small.png';
 import adventTwo from '../../public/work/screenshots/advent-medium.png';
 import adventThree from '../../public/work/screenshots/advent-large.png';
 import adventFour from '../../public/work/screenshots/advent-xlarge.png';
+
+import appleOne from '../../public/work/screenshots/apple-one.png';
+import appleTwo from '../../public/work/screenshots/apple-one-two.png';
 
 export const fullName = 'Jason Meyers';
 
@@ -42,10 +50,26 @@ export const experience = [
       'web components'
     ],
     work: [
-      { name: 'first', image: adventOne },
-      { name: 'second', image: adventTwo },
-      { name: 'third', image: adventThree },
-      { name: 'third', image: adventFour }
+      {
+        imagedescription:
+          'Smallest large-screen capture of dashboard, ideally small-desktop',
+        image: adventOne
+      },
+      {
+        imagedescription:
+          'Medium-small, data-dense, large-screen capture of dashboard, ideally for average desktop',
+        image: adventTwo
+      },
+      {
+        imagedescription:
+          'Large large-screen capture of dashboard, ideally for desktop',
+        image: adventThree
+      },
+      {
+        imagedescription:
+          'Extra-large screen capture of Genesis X dashboard, for widest screens',
+        image: adventFour
+      }
     ]
   },
   {
@@ -60,11 +84,11 @@ export const experience = [
     keywords: ['marketing', 'UX', 'React JS', 'product management'],
     work: [
       {
-        name: 'first',
+        imagedescription: 'first',
         image: religionImage
       },
       {
-        name: 'second',
+        imagedescription: 'second',
         image: religionContact
       }
     ]
@@ -82,15 +106,15 @@ export const experience = [
     keywords: ['marketing', 'e-commerce', 'design system'],
     work: [
       {
-        name: 'first',
+        imagedescription: 'first',
         image: anzenDashboard
       },
       {
-        name: 'second',
+        imagedescription: 'second',
         image: anzenMarketing
       },
       {
-        name: 'third',
+        imagedescription: 'third',
         image: anzenMarketingTwo
       }
     ]
@@ -104,11 +128,21 @@ export const experience = [
        (partner: Rosewood Creative)`,
     year: '2021',
     url: 'https://tv.apple.com/',
-    keywords: ['marketing', 'e-commerce']
+    keywords: ['marketing', 'e-commerce'],
+    work: [
+      {
+        imagedescription: 'first',
+        image: appleOne
+      },
+      {
+        imagedescription: 'second',
+        image: appleTwo
+      }
+    ]
   },
   {
     company: 'HiRoad + State Farm',
-    logo: stateFarmLogo,
+    logo: hiRoadLogo,
     products: [
       'HiRoad insurance platform',
       'HiRoad Brand Portal',
@@ -120,7 +154,21 @@ export const experience = [
       'Built responsive website for AppleTV+, in 34 languages, for Apple (via Rosewood Creative)',
     year: '2016-2020',
     url: 'https://www.hiroad.com/',
-    keywords: ['marketing', 'e-commerce']
+    keywords: ['marketing', 'e-commerce'],
+    work: [
+      {
+        imagedescription: 'first',
+        image: hiRoadOne
+      },
+      {
+        imagedescription: 'second',
+        image: hiRoadTwo
+      },
+      {
+        imagedescription: 'second',
+        image: hiRoadThree
+      }
+    ]
   },
   {
     company: 'Ellucian',
