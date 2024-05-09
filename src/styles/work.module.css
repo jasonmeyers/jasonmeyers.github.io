@@ -1,52 +1,82 @@
 .main {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  min-height: 100vh;
-  opacity: 0;
-  margin-right: 0%;
+  justify-content: center;
   animation: fadeIn 2s;
   -webkit-animation: fadeIn 2s;
   animation-fill-mode: both;
   -webkit-animation-fill-mode: both;
+  color: #333;
+  max-width: var(--max-width);
+
+  .work {
+    display: flex;
+    justify-content: ;
+    flex-direction: column;
+    flex: 1;
+    position: relative;
+    margin: 4rem 0;
+    padding: 0 5rem 5rem 5rem;
+    background-color: #fff;
+    border-radius: 5px;
+    box-sizing: border-box;
+
+    .image {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      border-radius: 6px;
+      .file {
+        display: flex;
+        flex-flow: row nowrap;
+        margin: 3rem 0;
+      }
+      .workcontainer {
+        margin: 0 2rem 2rem 0;
+        display: flex;
+        flex-direction: row;
+      }
+    }
+
+    .content {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+
+      .meta {
+        font-size: 24px;
+        font-weight: 700;
+      }
+      .products {
+        .product {
+          display: inline-block;
+          border: 1px solid #ccc;
+          margin: 2px;
+          padding: 1px;
+          border-radius: 4px;
+        }
+      }
+
+      .header1 {
+        font-size: 30px;
+      }
+      .blockquote {
+        height: auto;
+      }
+    }
+    @media (max-width: 700px) {
+      width: 100%;
+    }
+  }
 }
 
 @keyframes fadeIn {
   0% {
     opacity: 0;
-    margin-right: 25%;
   }
   100% {
     opacity: 1;
-    margin-right: 0%;
-  }
-}
-
-.work {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  padding: var(--small-breakpoint-padding);
-  border: --primary-glow;
-  background: --primary-glow;
-  border-radius: 3px;
-  width: 20rem;
-  .header1 {
-    font-size: 30px;
-  }
-  .blockquote {
-    height: 10vh;
-  }
-  @media (max-width: 700px) {
-    width: 100%;
-    display: flex;
-    /* margin: var(--small-breakpoint-padding); */
-
-    .header1 {
-      font-size: 60px;
-    }
-    .blockquote {
-      height: calc(100vh - var(--small-breakpoint-padding));
-    }
   }
 }

@@ -1,10 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export",
+  output: 'export',
   // basePath: "/jasonmeyers.github.io",
   images: {
-    unoptimized: true,
-  },
+    unoptimized: true
+  }
 };
 
 module.exports = nextConfig;
