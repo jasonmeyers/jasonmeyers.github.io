@@ -8,9 +8,11 @@ function MenuModal({ openModal, closeModal, imgsrc, description }) {
 
   useEffect(() => {
     if (openModal) {
+      document.body.style.overflow = 'hidden';
       ref.current?.showModal();
     } else {
       ref.current?.close();
+      document.body.style.overflow = 'unset';
     }
   }, [openModal]);
 

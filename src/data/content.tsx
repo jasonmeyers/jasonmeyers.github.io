@@ -131,6 +131,7 @@ export const experience = [
   {
     company: 'Apple + Rosewood Creative',
     logo: appleLogo,
+    role: 'Frontend Dev',
     products: ['Apple TV+', 'Apple One'],
     description: `Built responsive website for AppleTV+, in 34 languages.
       Built and tested a responsive templating engine for Apple One.

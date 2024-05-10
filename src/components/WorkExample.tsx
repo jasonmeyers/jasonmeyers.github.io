@@ -14,7 +14,12 @@ const WorkExample = ({ imagedescription, workImage }) => {
 
   return (
     <div className="examplecontainer">
-      <a href="#" onClick={() => setModal(true)}>
+      <a
+        href="#"
+        onClick={() => {
+          setModal(true);
+        }}
+      >
         <Image
           className="workimage"
           width={200}
