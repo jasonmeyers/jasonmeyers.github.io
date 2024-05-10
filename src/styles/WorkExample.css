@@ -1,7 +1,7 @@
 .examplecontainer {
   border: none;
-  width: 150px;
-  height: 100px;
+  width: 200px;
+  height: 150px;
   overflow: hidden;
   margin: 5px;
   border-radius: 2px;
@@ -11,5 +11,9 @@
   }
   .workimage {
     height: auto;
+  }
+  @media (max-width: 700px) {
+    width: 100px;
+    height: 75px;
   }
 }

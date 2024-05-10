@@ -3,16 +3,20 @@ import styles from '../../styles/work.module.css';
 import { experience } from '../../data/content';
 import WorkExample from '../../components/WorkExample';
 import { ProductsList } from '../../components/ProductsList';
+import Link from 'next/link';
 
 const Work = (props) => {
   return (
     <>
       <div className={styles.main}>
         {experience.map(
-          ({ company, logo, work, year, products, description, role }) => (
+          ({ company, logo, work, year, products, description, role, url }) => (
             <section key={company} className={styles.work}>
               <div className={styles.image}>
-                <Image src={logo} alt={company} className={styles.file} />
+                <Link href={url} target="_blank">
+                  <Image src={logo} alt={company} className={styles.file} />
+                </Link>
+
                 {work && (
                   <div className={styles.workcontainer}>
                     {work.map((item) => (
@@ -33,8 +37,12 @@ const Work = (props) => {
                   </>
                 )}
                 <div className={styles.meta}>
-                  {role && <div className={styles.role}>{role}</div>}
-                  {year && <div className={styles.year}>{year}</div>}
+                  {year && (
+                    <div className={styles.year}>
+                      {year}
+                      {role && <span className={styles.role}>{role}</span>}
+                    </div>
+                  )}
                 </div>
                 <blockquote className={styles.blockquote}>
                   {description}

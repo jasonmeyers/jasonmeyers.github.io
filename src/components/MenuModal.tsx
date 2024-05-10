@@ -23,7 +23,7 @@ function MenuModal({ openModal, closeModal, imgsrc, description }) {
         style={{ objectFit: 'contain' }}
         alt={description}
       />
-      <div className="description">{description}</div>
+      {description && <div className="description">{description}</div>}
       <button onClick={closeModal} className="close">
         ×
       </button>

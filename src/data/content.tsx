@@ -17,9 +17,14 @@ import hiRoadLogo from '../../public/work/marks/hiroad-logo.svg';
 import hiRoadOne from '../../public/work/screenshots/hiroad-brand-essence.png';
 import hiRoadTwo from '../../public/work/screenshots/hiroad-brand-identity.png';
 import hiRoadThree from '../../public/work/screenshots/hiroad-brand-language.png';
+import hiRoadFour from '../../public/work/screenshots/hiroad-marketing-version2.png';
 
 import ellucianLogo from '../../public/work/marks/ellucian-logo.svg';
+import ellucianTwo from '../../public/work/screenshots/ellucian.jpeg';
+import ellucianThree from '../../public/work/screenshots/ellucian-four.jpg';
+
 import businessWireLogo from '../../public/work/marks/business-wire-logo.png';
+import businessWire from '../../public/work/screenshots/business-wire.png';
 
 import adventOne from '../../public/work/screenshots/advent-small.png';
 import adventTwo from '../../public/work/screenshots/advent-medium.png';
@@ -28,6 +33,10 @@ import adventFour from '../../public/work/screenshots/advent-xlarge.png';
 
 import appleOne from '../../public/work/screenshots/apple-one.png';
 import appleTwo from '../../public/work/screenshots/apple-one-two.png';
+import appleThree from '../../public/work/screenshots/apple-tv.png';
+import appleFour from '../../public/work/screenshots/apple-tv-two.png';
+import appleFive from '../../public/work/screenshots/apple-tv-tw.png';
+import appleSix from '../../public/work/screenshots/apple-tv-ru.png';
 
 export const fullName = 'Jason Meyers';
 
@@ -84,11 +93,11 @@ export const experience = [
     keywords: ['marketing', 'UX', 'React JS', 'product management'],
     work: [
       {
-        imagedescription: 'first',
+        imagedescription: '',
         image: religionImage
       },
       {
-        imagedescription: 'second',
+        imagedescription: '',
         image: religionContact
       }
     ]
@@ -98,7 +107,7 @@ export const experience = [
     logo: anzenLogo,
     year: '2021-2022',
     products: [],
-    role: 'Web Developer + Producer',
+    role: 'UI Engineer',
     description: [
       'Developed a design system, dashboard, onboarding checklist, customer acquisition flows, and marketing site in NextJS/React/Redux/Emotion, both as a developer and as a producer.'
     ],
@@ -106,15 +115,15 @@ export const experience = [
     keywords: ['marketing', 'e-commerce', 'design system'],
     work: [
       {
-        imagedescription: 'first',
+        imagedescription: '',
         image: anzenDashboard
       },
       {
-        imagedescription: 'second',
+        imagedescription: '',
         image: anzenMarketing
       },
       {
-        imagedescription: 'third',
+        imagedescription: '',
         image: anzenMarketingTwo
       }
     ]
@@ -131,12 +140,28 @@ export const experience = [
     keywords: ['marketing', 'e-commerce'],
     work: [
       {
-        imagedescription: 'first',
+        imagedescription: '',
         image: appleOne
       },
       {
-        imagedescription: 'second',
+        imagedescription: '',
         image: appleTwo
+      },
+      {
+        imagedescription: '',
+        image: appleThree
+      },
+      {
+        imagedescription: '',
+        image: appleFour
+      },
+      {
+        imagedescription: '',
+        image: appleFive
+      },
+      {
+        imagedescription: '',
+        image: appleSix
       }
     ]
   },
@@ -158,32 +183,57 @@ export const experience = [
     keywords: ['marketing', 'e-commerce'],
     work: [
       {
-        imagedescription: 'first',
+        imagedescription: '',
         image: hiRoadOne
       },
       {
-        imagedescription: 'second',
+        imagedescription: '',
         image: hiRoadTwo
       },
       {
-        imagedescription: 'second',
+        imagedescription: '',
         image: hiRoadThree
+      },
+      {
+        imagedescription: '',
+        image: hiRoadFour
       }
     ]
   },
   {
     company: 'Ellucian',
+    role: 'FE Developer',
     logo: ellucianLogo,
     products: ['Brainstorm LMS'],
     description: 'Built product features with PM, CSS',
     year: '2015',
     url: 'https://www.ellucian.com/',
-    keywords: ['education', 'LMS']
+    keywords: ['education', 'LMS'],
+    work: [
+      {
+        imagedescription: '',
+        image: ellucianTwo
+      },
+      {
+        imagedescription: '',
+        image: ellucianThree
+      }
+    ]
   },
   {
     company: 'Business Wire',
+    url: 'https://www.businesswire.com/',
+    work: [
+      {
+        imagedescription: '',
+        image: businessWire
+      }
+    ],
+    role: 'FE Developer',
     logo: businessWireLogo,
     products: [
+      'Marketing Site',
+      'Registration flow',
       'Press Release product',
       'Onboarding tools and flow',
       'Press Release Authoring tooling and UI'
@@ -191,7 +241,6 @@ export const experience = [
     description:
       'Built and optimized templates/views used by 2.4M documents @ 3.1M views/month. Built and optimized responsive templates on top of Business Wire’s J2EE order-entry stack. Led product feature ideation and prototyping for order-entry flows. Set site and institutional standards for markup, design and CSS.',
     year: '2013-2015',
-    url: 'https://www.businesswire.com/',
     keywords: ['marketing', 'publishing']
   }
 ];

@@ -14,9 +14,9 @@
     flex: 1;
     position: relative;
     margin: 1rem 0 1rem 0;
-    padding: 0 5rem 5rem 5rem;
+    padding: 0 4rem 4rem 4rem;
     background-color: #fff;
-    border-radius: 0px 70px 5px 5px;
+    border-radius: 77px 3px 5px 5px;
     box-sizing: border-box;
 
     .image {
@@ -46,19 +46,10 @@
       .meta {
         font-size: 24px;
         font-weight: 700;
+
         .role {
-          position: absolute;
-          top: 150px;
-          right: 10px;
-          background-color: #121212;
-          color: #fff;
-          width: 130px;
-          height: 130px;
-          border-radius: 3% 50% 50% 50%;
-          display: flex;
-          flex-direction: row;
           font-size: 14px;
-          padding: 25px 16px 10px 10px;
+          font-weight: lighter;
         }
         .year {
           position: absolute;
@@ -68,7 +59,7 @@
           color: #fff;
           width: 130px;
           height: 130px;
-          border-radius: 50% 50% 50% 3%;
+          border-radius: 50% 3% 50% 50%;
           display: flex;
           justify-content: center;
           flex-direction: column;

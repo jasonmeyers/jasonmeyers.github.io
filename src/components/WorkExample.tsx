@@ -17,8 +17,8 @@ const WorkExample = ({ imagedescription, workImage }) => {
       <a href="#" onClick={() => setModal(true)}>
         <Image
           className="workimage"
-          width={500}
-          height={500}
+          width={200}
+          height={150}
           src={workImage}
           alt={workImage}
         />
