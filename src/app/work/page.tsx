@@ -13,7 +13,7 @@ const Work = (props) => {
           ({ company, logo, work, year, products, description, role, url }) => (
             <section key={company} className={styles.work}>
               <div className={styles.image}>
-                <Link href={url} target="_blank">
+                <Link href={url} target="_blank" className={styles.link}>
                   <Image src={logo} alt={company} className={styles.file} />
                 </Link>
 

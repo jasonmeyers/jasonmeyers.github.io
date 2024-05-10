@@ -30,6 +30,9 @@
         flex-flow: row nowrap;
         margin: 3rem 0;
       }
+      .link {
+        display: contents;
+      }
       .workcontainer {
         margin: 0 2rem 2rem 0;
         display: flex;
