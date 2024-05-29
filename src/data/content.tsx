@@ -38,6 +38,9 @@ import appleFour from '../../public/work/screenshots/apple-tv-two.png';
 import appleFive from '../../public/work/screenshots/apple-tv-tw.png';
 import appleSix from '../../public/work/screenshots/apple-tv-ru.png';
 
+import tolleson from '../../public/work/marks/tolleson.png';
+import clockFour from '../../public/work/marks/clockfour.jpg';
+
 export const fullName = 'Jason Meyers';
 
 export const experience = [
@@ -242,6 +245,28 @@ export const experience = [
     description:
       'Built and optimized templates/views used by 2.4M documents @ 3.1M views/month. Built and optimized responsive templates on top of Business Wire’s J2EE order-entry stack. Led product feature ideation and prototyping for order-entry flows. Set site and institutional standards for markup, design and CSS.',
     year: '2013-2015',
+    keywords: ['marketing', 'publishing']
+  },
+  {
+    company: 'Tolleson',
+    url: 'https://www.tolleson.com/',
+    role: 'FE Developer',
+    logo: tolleson,
+    products: ['Velvetwire'],
+    description:
+      'Built a dynamic, video-based frontend for a consumer electronics brand on top of Drupal',
+    year: '2013',
+    keywords: ['marketing', 'publishing']
+  },
+  {
+    company: 'Clock Four',
+    url: 'https://www.tolleson.com/',
+    role: 'FE Developer',
+    logo: clockFour,
+    products: ['Corona', 'Atmel', 'Capital One'],
+    description:
+      'Built a dynamic, video-based frontend for a consumer electronics brand on top of Drupal',
+    year: '2010-2011',
     keywords: ['marketing', 'publishing']
   }
 ];
